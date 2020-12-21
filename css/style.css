@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+body{
+  background-color:  #FCFCFC;
+  font-family:'Song Myung', serif;
+  cursor: url(img/cursor.png), pointer;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/*nav bar*/
+.nav{
+
+  padding-top: 100px;
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+}
+
+.nav a{
+ color: black;
+ padding: 12px;
+ font-size: 30px;
+ text-decoration: none;
+}
+
+.nav a:hover{
+  color: #FCFCFC;
+  background-color: black;
+ }
+
+
+/*two layout*/
+
+.split{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+.left{
+  
+  top: 30%;
+  left: 5%;
+  
+}
+
+.right{
+  right: 0;
+  top: 30%;
+}
+
+/*rotation image*/
+
+.image{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.image1{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.image2{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.image3{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+
+h1{
+  color: #FCFCFC;
+  display: inline-block;
+  text-shadow: 2px 0 0 black, 0 2px 0 black, -2px 0 0 black,0 -2px 0 black;
+  font-size: 200px;
+  line-height: 80%;
+}
+
+h1:hover{
+  color: #FCFCFC;
+  text-shadow: 5px 0 0 black, 0 2px 0 black, -2px 0 0 black,0 -2px 0 black;
+}
+
+p{
+  height: 0;
+  font-size: 30px;
+  animation: an 2s ease-out 3s both;
+  display: inline-block;
+}
+
+@keyframes an{
+  from{
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 45deg);
+  }
+  to{
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+.korean{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; 
+  overflow: hidden;
+ 
+}
+
+.img{
+  display: flex;
+}
+
+
+
+/*for mobile phone*/
+
+@media only screen and (max-width: 600px){
+  
+   .left{
+     float: left;
+     left: 0;
+     top: 20%;
+     height: 100%;
+     width: 100%;
+   }
+   .right{
+     float: right;
+     right: 0;
+     top: 80%;
+     height: 100%;
+     width: 100%;
+   }
+   h1{
+     font-size: 100px;
+   }
+   p{
+     font-size: 20px;
+   }
+   .korean{
+     display: block;
+     font-size: 32px;
+     overflow: hidden;
+   }
+
+   }
+  
